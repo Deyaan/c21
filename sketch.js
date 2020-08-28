@@ -17,7 +17,7 @@ function setup() {
 function draw() {
   background(255,255,255);  
   bullet.velocityX=speed;
-  if(wall.x-car.x<(bullet.width+wall.width)/2){
+  if(wall.x-bullet.x<(bullet.width+wall.width)/2){
   bullet.velocityX=0;
   }
   hascollided();
