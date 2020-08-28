@@ -8,6 +8,7 @@ function setup() {
   bullet = createSprite(50,200,50,50);
   wall = createSprite(1500,200,60,height/2);
   wall.shapeColor=color(80,80,80);
+   var hascollided=0.5*weight*speed*speed/22500;  //Formula...
 }
 
 function draw() {
@@ -17,7 +18,7 @@ function draw() {
   bullet.velocityX=0;
   }
 
-  var hascollided=0.5*weight*speed*speed/22500;  //Formula...
+ 
 
   if(hascollided>180){
       bullet.shapeColor=color("green");
